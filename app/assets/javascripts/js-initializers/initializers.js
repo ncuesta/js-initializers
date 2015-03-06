@@ -1,4 +1,4 @@
-// (c) Copyright 2015 Nahuel Cuesta Luengo <nahuelcuestaluengo@gmail.com>
+// Copyright (c) 2015 Nahuel Cuesta Luengo <nahuelcuestaluengo@gmail.com>
 //
 // Injectable initializers micro-framework
 //
