@@ -163,4 +163,6 @@ window.Initializers = (function($, doc, undefined) {
       $(doc).on('page:change', $.runInitializers);
     }
   }
+
+  return I;
 }(jQuery, document));
