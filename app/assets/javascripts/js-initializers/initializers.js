@@ -48,6 +48,16 @@
 //
 //   Once the initializer is registered, it will run only when its condition
 //   returns true.
+//
+// Running the initializers without jQuery:
+//   If the page where js-initializers is included has jQuery loaded, all
+//   registerd initializers will be automatically run on page load. But what
+//   about non-jQuery pages? Those pages only ned to have the following snippet
+//   after the page has been loaded:
+//
+//     Initializers.run()
+//
+//   And that's it! Pretty straight-forward, huh?
 window.Initializers = (function($, doc, undefined) {
   var I = {}, initializers = {};
 
