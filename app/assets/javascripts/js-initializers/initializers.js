@@ -158,9 +158,9 @@ window.Initializers = (function($, doc, undefined) {
   if ($ !== undefined) {
     // Trigger initializers on page load (either with Turbolinks or without 'em)
     if (window.Turbolinks === undefined) {
-      $($.runInitializers);
+      $(Initializers.run);
     } else {
-      $(doc).on('page:change', $.runInitializers);
+      $(doc).on('page:change', Initializers.run);
     }
   }
 
